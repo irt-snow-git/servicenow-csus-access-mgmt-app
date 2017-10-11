@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sysevent_in_email_action">
+    <sysevent_in_email_action action="INSERT_OR_UPDATE">
+        <action>record_action</action>
+        <active>true</active>
+        <assignment_operator/>
+        <condition_script>email.subject.startsWith("Request for CMS")</condition_script>
+        <description>Handle the messages from OnBase for CARS Request notificaitons. </description>
+        <event_name>email.read</event_name>
+        <filter_condition/>
+        <from/>
+        <name>OnBase CARS Request Handler</name>
+        <order>50</order>
+        <reply_email/>
+        <required_roles/>
+        <script><![CDATA[// Grab the short description and body text.
+current.u_short_desc = email.subject;
+current.u_description = email.body_text;
+
+var caller = email.body.sacstate_email_address;
+var sacLinkUser = caller.substring(caller.lastIndexOf(":")+1, caller.lastIndexOf("@"));
+var phoneNumber = email.body.phone_number;
+// Pulls the name from the email address and assigns it to our caller field
+current.u_caller = sacLinkUser;
+// Department variable value in the email body is assigned to the record's Department field.
+current.u_department = email.body.department;
+// Phone number pulled from email body phone number var, just the number, no symbols.
+current.u_phone_number = phoneNumber.replace(/\D/g, '');
+
+// Grab the description
+var description = email.body.description;
+// Ref number at end of email body description var is assigned to our reference number field.
+current.u_ref_num = description.replace(/\D/g,'');
+
+
+current.insert();  // don't forget this
+
+logger.logInfo("Handled ONBASE email");
+event.state="stop_processing";]]></script>
+        <stop_processing>false</stop_processing>
+        <sys_class_name>sysevent_in_email_action</sys_class_name>
+        <sys_created_by>gg622</sys_created_by>
+        <sys_created_on>2017-10-11 20:46:27</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>05731a700f75434012e4348ce1050ebd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>OnBase CARS Request Handler</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Access Management" source="x_casus_access">b9894a7c6ff50f00ad6cd4a21c3ee4ff</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Access Management">b9894a7c6ff50f00ad6cd4a21c3ee4ff</sys_scope>
+        <sys_update_name>sysevent_in_email_action_05731a700f75434012e4348ce1050ebd</sys_update_name>
+        <sys_updated_by>gg622</sys_updated_by>
+        <sys_updated_on>2017-10-11 20:46:27</sys_updated_on>
+        <table>x_casus_access_cms_request</table>
+        <template/>
+        <type>new</type>
+    </sysevent_in_email_action>
+</record_update>
