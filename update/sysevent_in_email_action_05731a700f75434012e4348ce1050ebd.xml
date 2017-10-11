@@ -14,23 +14,23 @@
         <reply_email/>
         <required_roles/>
         <script><![CDATA[// Grab the short description and body text.
-current.u_short_desc = email.subject;
-current.u_description = email.body_text;
+current.short_desc = email.subject;
+current.description = email.body_text;
 
 var caller = email.body.sacstate_email_address;
 var sacLinkUser = caller.substring(caller.lastIndexOf(":")+1, caller.lastIndexOf("@"));
 var phoneNumber = email.body.phone_number;
 // Pulls the name from the email address and assigns it to our caller field
-current.u_caller = sacLinkUser;
+current.caller = sacLinkUser;
 // Department variable value in the email body is assigned to the record's Department field.
-current.u_department = email.body.department;
+current.department = email.body.department;
 // Phone number pulled from email body phone number var, just the number, no symbols.
-current.u_phone_number = phoneNumber.replace(/\D/g, '');
+current.phone_number = phoneNumber.replace(/\D/g, '');
 
 // Grab the description
 var description = email.body.description;
 // Ref number at end of email body description var is assigned to our reference number field.
-current.u_ref_num = description.replace(/\D/g,'');
+current.ref_num = description.replace(/\D/g,'');
 
 
 current.insert();  // don't forget this
@@ -44,7 +44,7 @@ event.state="stop_processing";]]></script>
         <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>05731a700f75434012e4348ce1050ebd</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>OnBase CARS Request Handler</sys_name>
         <sys_overrides/>
         <sys_package display_value="Access Management" source="x_casus_access">b9894a7c6ff50f00ad6cd4a21c3ee4ff</sys_package>
@@ -53,7 +53,7 @@ event.state="stop_processing";]]></script>
         <sys_scope display_value="Access Management">b9894a7c6ff50f00ad6cd4a21c3ee4ff</sys_scope>
         <sys_update_name>sysevent_in_email_action_05731a700f75434012e4348ce1050ebd</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-10-11 20:46:27</sys_updated_on>
+        <sys_updated_on>2017-10-11 21:48:30</sys_updated_on>
         <table>x_casus_access_cms_request</table>
         <template/>
         <type>new</type>

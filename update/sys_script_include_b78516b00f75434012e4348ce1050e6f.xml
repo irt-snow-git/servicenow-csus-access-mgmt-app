@@ -13,8 +13,8 @@ RetrieveCarsRequesterProcessor.prototype = Object.extendsObject(global.AbstractA
 	retrieveCarsRequester : function() {
 		// build new response xml element for result based on the record sysID
 		var result = this.newItem("result");
-		var rec = new GlideRecord("u_cars_requester");
-		rec.get(this.getParameter('sysparm_id')); // receives u_cars_requester sys_id value
+		var rec = new GlideRecord("x_casus_access_cars_requester");
+		rec.get(this.getParameter('sysparm_id')); // receives x_casus_access_cars_requester sys_id value
 		result.setAttribute("message", "returning CARS requester information");
 		rec.next();
 		//if an item exists, add fields
@@ -25,8 +25,8 @@ RetrieveCarsRequesterProcessor.prototype = Object.extendsObject(global.AbstractA
 	retrieveCarsRequesterByDeptID : function() {
 		// build new response xml element for result based on the department ID integer
 		var result = this.newItem("result");
-		var rec = new GlideRecord('u_cars_requester');
-		rec.addQuery('u_department_id', this.getParameter('sysparm_deptID'));
+		var rec = new GlideRecord('x_casus_access_cars_requester');
+		rec.addQuery('department_id', this.getParameter('sysparm_deptID'));
 		rec.query();
 		rec.next();
 		
@@ -40,8 +40,8 @@ RetrieveCarsRequesterProcessor.prototype = Object.extendsObject(global.AbstractA
 	retrieveCarsRequesterByDeptSysID : function() {
 		// build new response xml element for result based on the department ID integer
 		var result = this.newItem("result");
-		var rec = new GlideRecord("u_cars_requester");
-		rec.addQuery('u_department_name', this.getParameter('sysparm_deptID')); // received department sys_id value
+		var rec = new GlideRecord("x_casus_access_cars_requester");
+		rec.addQuery('department_name', this.getParameter('sysparm_deptID')); // received department sys_id value
 		rec.query();
 		rec.next();
 		
@@ -54,11 +54,11 @@ RetrieveCarsRequesterProcessor.prototype = Object.extendsObject(global.AbstractA
 	
 	_executeAdds : function(rec) {
 		//add some favorite nodes with name and value attributes
-		this._addCarsReqInfo("requester",rec.u_requester_name);
-		this._addCarsReqInfo("dept_id", rec.u_department_id);
-		this._addCarsReqInfo("department",rec.u_department_name);
-		this._addCarsReqInfo("division",rec.u_division);
-		this._addCarsReqInfo("is_high_risk",rec.u_high_risk_requester);
+		this._addCarsReqInfo("requester",rec.requester_name);
+		this._addCarsReqInfo("dept_id", rec.department_id);
+		this._addCarsReqInfo("department",rec.department_name);
+		this._addCarsReqInfo("division",rec.division);
+		this._addCarsReqInfo("is_high_risk",rec.high_risk_requester);
 		this._addCarsReqInfo("sys_id",rec.sys_id);
 	},
 	
@@ -75,7 +75,7 @@ RetrieveCarsRequesterProcessor.prototype = Object.extendsObject(global.AbstractA
         <sys_created_on>2017-10-11 20:53:59</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>b78516b00f75434012e4348ce1050e6f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>RetrieveCarsRequesterProcessor</sys_name>
         <sys_package display_value="Access Management" source="x_casus_access">b9894a7c6ff50f00ad6cd4a21c3ee4ff</sys_package>
         <sys_policy>read</sys_policy>
@@ -83,6 +83,6 @@ RetrieveCarsRequesterProcessor.prototype = Object.extendsObject(global.AbstractA
         <sys_scope display_value="Access Management">b9894a7c6ff50f00ad6cd4a21c3ee4ff</sys_scope>
         <sys_update_name>sys_script_include_b78516b00f75434012e4348ce1050e6f</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-10-11 20:53:59</sys_updated_on>
+        <sys_updated_on>2017-10-11 21:40:45</sys_updated_on>
     </sys_script_include>
 </record_update>

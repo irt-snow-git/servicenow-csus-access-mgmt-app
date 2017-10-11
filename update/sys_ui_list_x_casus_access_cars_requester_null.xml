@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_casus_access_cars_requester" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>department_id</element>
+            <list_id display_value="x_casus_access_cars_requester" element="NULL" name="x_casus_access_cars_requester" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2343a6f40f75434012e4348ce1050e47</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-10-11 21:52:39</sys_created_on>
+            <sys_id>a743a6f40f75434012e4348ce1050e47</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-10-11 21:52:39</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>department_name</element>
+            <list_id display_value="x_casus_access_cars_requester" element="NULL" name="x_casus_access_cars_requester" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2343a6f40f75434012e4348ce1050e47</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-10-11 21:52:39</sys_created_on>
+            <sys_id>2b43a6f40f75434012e4348ce1050e47</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-10-11 21:52:39</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>division</element>
+            <list_id display_value="x_casus_access_cars_requester" element="NULL" name="x_casus_access_cars_requester" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2343a6f40f75434012e4348ce1050e47</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-10-11 21:52:39</sys_created_on>
+            <sys_id>ab43a6f40f75434012e4348ce1050e47</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-10-11 21:52:39</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>high_risk_requester</element>
+            <list_id display_value="x_casus_access_cars_requester" element="NULL" name="x_casus_access_cars_requester" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2343a6f40f75434012e4348ce1050e47</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-10-11 21:52:39</sys_created_on>
+            <sys_id>2f43a6f40f75434012e4348ce1050e47</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-10-11 21:52:39</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>requester_name</element>
+            <list_id display_value="x_casus_access_cars_requester" element="NULL" name="x_casus_access_cars_requester" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2343a6f40f75434012e4348ce1050e47</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-10-11 21:52:39</sys_created_on>
+            <sys_id>af43a6f40f75434012e4348ce1050e47</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-10-11 21:52:39</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_casus_access_cars_requester</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-10-11 21:52:39</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>2343a6f40f75434012e4348ce1050e47</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_casus_access_cars_requester</sys_name>
+            <sys_package display_value="Access Management" source="x_casus_access">b9894a7c6ff50f00ad6cd4a21c3ee4ff</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Access Management">b9894a7c6ff50f00ad6cd4a21c3ee4ff</sys_scope>
+            <sys_update_name>sys_ui_list_x_casus_access_cars_requester_null</sys_update_name>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-10-11 21:52:39</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

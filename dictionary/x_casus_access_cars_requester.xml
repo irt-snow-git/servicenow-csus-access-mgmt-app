@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element label="Department Access Coordinator" max_length="40" name="x_casus_access_cars_requester" type="collection">
-        <element label="Department ID" mandatory="true" max_length="40" name="department_id" type="integer"/>
+        <element attributes="format=none" label="Department ID" mandatory="true" max_length="40" name="department_id" type="integer"/>
         <element label="Department Name" max_length="32" name="department_name" reference="cmn_department" type="reference"/>
         <element label="Division" max_length="32" name="division" reference="cmn_department" type="reference"/>
         <element label="High Risk Requester" max_length="40" name="high_risk_requester" type="boolean"/>
-        <element label="Requester Name" mandatory="true" max_length="32" name="requester_name" reference="sys_user" type="reference"/>
+        <element display="true" label="Requester Name" mandatory="true" max_length="32" name="requester_name" reference="sys_user" type="reference"/>
         <index name="index">
             <element name="division"/>
         </index>
