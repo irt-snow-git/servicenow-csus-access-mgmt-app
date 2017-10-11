@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="" section_id="fb4f4afc0f35434012e4348ce1050e47" sys_domain="global" table="x_casus_access_cms_request" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>0</position>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-10-11 20:27:30</sys_created_on>
+            <sys_id>04df02300f75434012e4348ce1050e9c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_casus_access_cms_request" sys_domain="global" view="Default view">fb4f4afc0f35434012e4348ce1050e47</sys_ui_section>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-10-11 20:27:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ref_num</element>
+            <position>1</position>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-10-11 20:27:30</sys_created_on>
+            <sys_id>84df02300f75434012e4348ce1050e9c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_casus_access_cms_request" sys_domain="global" view="Default view">fb4f4afc0f35434012e4348ce1050e47</sys_ui_section>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-10-11 20:27:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-10-11 20:27:30</sys_created_on>
+            <sys_id>08df02300f75434012e4348ce1050e9c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_casus_access_cms_request" sys_domain="global" view="Default view">fb4f4afc0f35434012e4348ce1050e47</sys_ui_section>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-10-11 20:27:30</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>caller</element>
+            <position>3</position>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-10-11 20:27:30</sys_created_on>
+            <sys_id>88df02300f75434012e4348ce1050e9c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_casus_access_cms_request" sys_domain="global" view="Default view">fb4f4afc0f35434012e4348ce1050e47</sys_ui_section>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-10-11 20:27:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>department</element>
+            <position>4</position>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-10-11 20:27:30</sys_created_on>
+            <sys_id>0cdf02300f75434012e4348ce1050e9c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_casus_access_cms_request" sys_domain="global" view="Default view">fb4f4afc0f35434012e4348ce1050e47</sys_ui_section>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-10-11 20:27:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>phone_number</element>
+            <position>5</position>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-10-11 20:27:30</sys_created_on>
+            <sys_id>8cdf02300f75434012e4348ce1050e9c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_casus_access_cms_request" sys_domain="global" view="Default view">fb4f4afc0f35434012e4348ce1050e47</sys_ui_section>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-10-11 20:27:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_casus_access_cms_request</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-10-11 20:25:17</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>fb4f4afc0f35434012e4348ce1050e47</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_casus_access_cms_request</sys_name>
+            <sys_overrides display_value="">global</sys_overrides>
+            <sys_package display_value="Access Management" source="x_casus_access">b9894a7c6ff50f00ad6cd4a21c3ee4ff</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Access Management">b9894a7c6ff50f00ad6cd4a21c3ee4ff</sys_scope>
+            <sys_update_name>sys_ui_section_fb4f4afc0f35434012e4348ce1050e47</sys_update_name>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-10-11 20:25:17</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
