@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_casus_access.RetrieveCarsRequesterProcessor</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>RetrieveCarsRequesterProcessor</name>
+        <script><![CDATA[var RetrieveCarsRequesterProcessor = Class.create();
+RetrieveCarsRequesterProcessor.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	
+	retrieveCarsRequester : function() {
+		// build new response xml element for result based on the record sysID
+		var result = this.newItem("result");
+		var rec = new GlideRecord("u_cars_requester");
+		rec.get(this.getParameter('sysparm_id')); // receives u_cars_requester sys_id value
+		result.setAttribute("message", "returning CARS requester information");
+		rec.next();
+		//if an item exists, add fields
+		if(rec) 
+			this._executeAdds(rec);
+    },
+	
+	retrieveCarsRequesterByDeptID : function() {
+		// build new response xml element for result based on the department ID integer
+		var result = this.newItem("result");
+		var rec = new GlideRecord('u_cars_requester');
+		rec.addQuery('u_department_id', this.getParameter('sysparm_deptID'));
+		rec.query();
+		rec.next();
+		
+		result.setAttribute("message", "returning CARS requester information");
+		
+		//if an item exists, add fields
+		if(rec) 
+			this._executeAdds(rec);
+    },
+	
+	retrieveCarsRequesterByDeptSysID : function() {
+		// build new response xml element for result based on the department ID integer
+		var result = this.newItem("result");
+		var rec = new GlideRecord("u_cars_requester");
+		rec.addQuery('u_department_name', this.getParameter('sysparm_deptID')); // received department sys_id value
+		rec.query();
+		rec.next();
+		
+		result.setAttribute("message", "returning CARS requester information");
+		
+		//if an item exists, add fields
+		if(rec) 
+			this._executeAdds(rec);
+    },
+	
+	_executeAdds : function(rec) {
+		//add some favorite nodes with name and value attributes
+		this._addCarsReqInfo("requester",rec.u_requester_name);
+		this._addCarsReqInfo("dept_id", rec.u_department_id);
+		this._addCarsReqInfo("department",rec.u_department_name);
+		this._addCarsReqInfo("division",rec.u_division);
+		this._addCarsReqInfo("is_high_risk",rec.u_high_risk_requester);
+		this._addCarsReqInfo("sys_id",rec.sys_id);
+	},
+	
+	_addCarsReqInfo : function(name, value) {
+		var carsReqInfo = this.newItem("carsReqInfo");
+		carsReqInfo.setAttribute("name", name);
+		carsReqInfo.setAttribute("value", value);
+	},
+
+    type: 'RetrieveCarsRequesterProcessor'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>gg622</sys_created_by>
+        <sys_created_on>2017-10-11 20:53:59</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>b78516b00f75434012e4348ce1050e6f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>RetrieveCarsRequesterProcessor</sys_name>
+        <sys_package display_value="Access Management" source="x_casus_access">b9894a7c6ff50f00ad6cd4a21c3ee4ff</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Access Management">b9894a7c6ff50f00ad6cd4a21c3ee4ff</sys_scope>
+        <sys_update_name>sys_script_include_b78516b00f75434012e4348ce1050e6f</sys_update_name>
+        <sys_updated_by>gg622</sys_updated_by>
+        <sys_updated_on>2017-10-11 20:53:59</sys_updated_on>
+    </sys_script_include>
+</record_update>
