@@ -2,7 +2,7 @@
 <record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
         <active>true</active>
-        <application display_value="Department Access Coordinator">3e1ccaf80f35434012e4348ce1050eff</application>
+        <application display_value="Access Management">3bce0ebc0f35434012e4348ce1050e3d</application>
         <assessment/>
         <content_page/>
         <device_type/>
@@ -28,7 +28,7 @@
         <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>3e1c46bc0f35434012e4348ce1050e58</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Department Access Coordinators</sys_name>
         <sys_overrides/>
         <sys_package display_value="Access Management" source="x_casus_access">b9894a7c6ff50f00ad6cd4a21c3ee4ff</sys_package>
@@ -36,8 +36,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Access Management">b9894a7c6ff50f00ad6cd4a21c3ee4ff</sys_scope>
         <sys_update_name>sys_app_module_3e1c46bc0f35434012e4348ce1050e58</sys_update_name>
-        <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-10-11 20:11:18</sys_updated_on>
+        <sys_updated_by>nicholasmyers</sys_updated_by>
+        <sys_updated_on>2017-12-19 20:04:26</sys_updated_on>
         <timeline_page/>
         <title>Department Access Coordinators</title>
         <u_basic_module/>
